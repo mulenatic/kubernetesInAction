@@ -6,7 +6,7 @@ spec:
   tls:
   - hosts:
     - kubia.example.com
-    secrectName: tls-secret
+    secretName: tls-secret
   rules:
   - host: kubia.example.com
     http:
