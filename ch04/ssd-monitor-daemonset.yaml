@@ -6,13 +6,13 @@ spec:
   selector:
     matchLabels:
       app: ssd-monitor
-    template:
-      metadata:
-        labels:
-          app: ssd-monitor
-      spec:
-        nodeSelector:
-          disk: ssd
-        containers:
-          - name: main
-            image: luksa/ssd-monitor
+  template:
+    metadata:
+      labels:
+        app: ssd-monitor
+    spec:
+      nodeSelector:
+        disk: ssd
+      containers:
+        - name: main
+          image: luksa/ssd-monitor
