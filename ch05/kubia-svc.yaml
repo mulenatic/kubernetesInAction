@@ -6,5 +6,5 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-    selector:
-      app: kubia
+  selector:
+    app: kubia
