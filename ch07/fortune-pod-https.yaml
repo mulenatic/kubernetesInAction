@@ -12,6 +12,11 @@ spec:
         configMapKeyRef:
           name: fortune-config
           key: sleep-interval
+    - name: FOO_SECRET
+      valueFrom:
+        secretKeyRef:
+          name: fortune-https
+          key: foo
     volumeMounts:
     - name: html
       mountPath: /var/htdocs
