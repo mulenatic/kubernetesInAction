@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: default
+spec:
+  runAsUser:
+    rule: MustRunAs
+    ranges:
+    - min: 2
+      max: 2
+  fsGroup:
+    rule: MustRunAs
+    ranges:
+    - min: 2
+      max: 10
+    - min: 20
+      max: 30
+  supplementalGroups:
+    rule: MustRunAs
+    ranges:
+    - min: 2
+      max: 10
+    - min: 20
+      max: 30
+  seLinux:
+    rule: RunAsAny
