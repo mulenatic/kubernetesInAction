@@ -12,4 +12,4 @@ alias gceProj='gcloud config set project core-gearbox-259809'
 
 # Emacs Docker
 alias emacs-docker='docker run -it --rm -v "$(pwd)":/emacsDocuments mulenatic/emacs-docker'
-
+alias emacs-docker-docker='docker run -it --rm  -v "$(pwd)":/emacsDocuments -v /var/run/docker.sock:/var/run/docker.sock mulenatic/emacs-docker-docker'
