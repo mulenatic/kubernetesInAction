@@ -14,5 +14,7 @@ alias sshEnt='gcloud compute --project "core-gearbox-259809" ssh --zone europe-w
 # Emacs Docker
 alias emacs-docker='docker run -it --rm -v "$(pwd)":/emacsDocuments mulenatic/emacs-docker'
 alias emacs-docker-docker='docker run -it --rm  -v "$(pwd)":/emacsDocuments -v /var/run/docker.sock:/var/run/docker.sock mulenatic/emacs-docker-docker'
+alias emacs-docker-java='docker run -it --rm -v "$(pwd)":/emacsDocuments mulenatic/emacs-docker-java'
+
 
 
