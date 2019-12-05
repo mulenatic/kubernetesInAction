@@ -9,7 +9,10 @@ alias createGoogleClusterMicro='gcloud container clusters create kubia-micro --n
 
 # GCE
 alias gceProj='gcloud config set project core-gearbox-259809'
+alias sshEnt='gcloud compute --project "core-gearbox-259809" ssh --zone europe-west3-c entwicklerinstanz'
 
 # Emacs Docker
 alias emacs-docker='docker run -it --rm -v "$(pwd)":/emacsDocuments mulenatic/emacs-docker'
 alias emacs-docker-docker='docker run -it --rm  -v "$(pwd)":/emacsDocuments -v /var/run/docker.sock:/var/run/docker.sock mulenatic/emacs-docker-docker'
+
+
